@@ -1,0 +1,14 @@
+# Ignore virtual envs, caches and model outputs
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.pt
+*.bin
+out.jsonl
+examples_input.txt
+.env
+
+# optionally track large model files with LFS instead of committing them
+models/*

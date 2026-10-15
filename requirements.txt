@@ -1,0 +1,19 @@
+# Requirements for the SO101 placeholder adapter subsystem
+# NOTE: This is a conservative, CPU-first set of dependencies for local testing.
+# If you have GPU/CUDA available and want accelerated PyTorch, install the
+# appropriate torch+cuda package from https://download.pytorch.org/whl/torch_stable.html
+
+# Core
+torch>=1.13.1; platform_system != "Windows"
+transformers>=4.30.0
+numpy>=1.23
+
+# Small utilities and tokenizers
+sentencepiece>=0.1.97
+tqdm>=4.64.0
+
+# Dev/test
+pytest>=7.0
+
+# If you plan to use huggingface hub features or download models programmatically
+# huggingface-hub>=0.14.0
